@@ -30,5 +30,6 @@ Baklib适合小白使用， 搭建一键式很方便，速度也还行，就是�
 https://miaocat.baklib.com/source/c0a2
 https://github.com/luoying2024/Alua-Remote-update-module/
 
-![预览效果](https://static01.imgkr.com/temp/1575b7c0990e4bf28bcb67f75d747d29.jpg ''喵喵喵'')
+![预览效果](https://static01.imgkr.com/temp/1575b7c0990e4bf28bcb67f75d747d29.jpg''喵喵喵'')
+
 第一次用Github，w
