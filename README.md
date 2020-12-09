@@ -14,8 +14,8 @@
 下载fas文件或下载lua文件到工程目录，按照栗子说明来调用就可以啦!
 
 **对于不会用Git hub的小白请点这个**
-https://github.com/luoying2024/Alua-Remote-update-module/archive/V2.0.0.zip
-下载源码压缩包
+https://github.com/luoying2024/Alua-Remote-update-module/releases/tag/V2.0.0
+然后展开下面的表单，下载想要的资源
 
 ## 云端配置:
 推荐使用 LOFTER，baklib 来快速免费搭建属于自己的博客（推荐LOFTER，云储，Git hub也可以），同时还提供访问页面服务。
