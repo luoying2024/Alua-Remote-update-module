@@ -34,6 +34,5 @@ https://github.com/luoying2024/Alua-Remote-update-module/
 
 
 
-
-![备图](https://i.loli.net/2020/12/09/Q5U7EFwmHtr1Ky2.jpg''图片title'')
+![phptfhPCO](https://i.loli.net/2020/12/09/Q5U7EFwmHtr1Ky2.jpg)
 第一次用Github，w
