@@ -529,7 +529,7 @@ function 调用系统下载()
            else
             AlertDialog.Builder(this)
             .setTitle("提示")
-            .setMessage("有新的自动更新")
+            .setMessage("有新的自动更新  \n公告\n"..message)
             .setCancelable(false)
             .setPositiveButton("现在下载",{onClick=function(v)
                 if pcall(function()
@@ -610,12 +610,12 @@ local dlprogress={
   layout_width="100%w";
   gravity="center";
   id="dc";
-  backgroundColor="#FFEEEEEE";
+  backgroundColor="#ffffffff";
   {
     CardView;
     layout_height="wrap";
     id="card";
-    backgroundColor="#FFEEEEEE";
+    backgroundColor="#ffffffff";
     {
       ScrollView;
       layout_height="fill";
@@ -623,12 +623,12 @@ local dlprogress={
       VerticalScrollBarEnabled=false;
       layout_marginTop="10dp";
       OverScrollMode=2;
-      backgroundColor="#FFEEEEEE";
+      backgroundColor="#ffffffff";
       {
         LinearLayout;
         orientation="vertical";
         layout_height="fill";
-        BackgroundColor="#FFEEEEEE";
+        BackgroundColor="#ffffffff";
         layout_width="100%w";
         {
           CardView;
@@ -753,11 +753,18 @@ local dlprogress={
 };
 
 function installApk(path)
+if pcall(function()
   intent = Intent(Intent.ACTION_VIEW)
   安装包路径=path
   intent.setDataAndType(Uri.parse("file://"..安装包路径), "application/vnd.android.package-archive")
   intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
   activity.startActivity(intent)
+      end) then
+    --  print("未报错")
+   else
+   print("安装错误")
+   弹窗更新()
+   end
 end
 
 function downlaodFile(url, path, filename, title, must)
@@ -820,7 +827,7 @@ function downlaodFile(url, path, filename, title, must)
   end
   角度=40
   控件id=card
-  控件颜色=0xFFEEEEEE
+  控件颜色=0xffffffff
   CircleButton(控件id,控件颜色,角度)
 
   function 上滑动画(id)
