@@ -325,7 +325,7 @@ function updatefall()
           自定义错误提示样式("没有获取到更新状态{"..code)
         end
         --公共更新
-        if switchss == '开' then
+        if switchs == '开' then
           if not ((usevername and version == appdate) or (not usevername and version >= appdate)) then--判断版本号
             if auto=="开" then
               调用系统下载()
@@ -335,7 +335,7 @@ function updatefall()
            else
             --print('没有更新可用')
           end
-         elseif switchss == '关' then
+         elseif switchs == '关' then
           --云端更新关闭
           return true
         end
