@@ -1,5 +1,6 @@
 # Alua-Remote-update-module
 适用于Alua和Fusion APP的远程更新模块
+好久之前写的
 
 ### 可实现功能
 1.  远程更新加动画弹窗下载
